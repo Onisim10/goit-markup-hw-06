@@ -407,11 +407,26 @@
     </footer>
     <div data-modal class="is-hidden">
       <div data-modal-content>
-        <h2>Asta e un titlu din modal</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, fuga?
-        </p>
         <button data-modal-close type="button">X</button>
+        <h2 class="modal-tittle">Leave your information and we'll call you back</h2>
+
+       <form  name="modal-form" class="modal-form">
+        <label class="modal-form__position">
+        Name 
+      <input type="text" name="username" class="modal-form__input" />
+    </label>
+
+    <label class="">
+      Telephone
+      <input type="tel" name="userphone" />
+    </label>
+
+    <label>
+      E-mail
+      <input type="email" name="email" />
+    </label>
+  </form>
+        
       </div>
     </div>
     <script src="./modal.js"></script>
