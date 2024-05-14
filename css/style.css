@@ -552,7 +552,7 @@ a {
 }
 .footer {
   width: 1600px;
-  height: 500px;
+  height: 251px;
   background-color: var(--footer-color);
   font-family: var(--primary-font);
   font-weight: 400;
@@ -634,7 +634,7 @@ a {
 .footer2 {
   width: 206px;
   height: 80px;
-  padding-left: 70px;
+  padding-left: 100px;
   padding-top: 15px;
 }
 .icon-footer {
@@ -674,6 +674,92 @@ a {
 .footer-social-icon li:hover svg {
   fill: var(--white);
 }
+
+.email-footer {
+  position: relative;
+}
+
+.footer-email {
+  background: var(--footer-color);
+  width: 358px;
+  height: 50px;
+  top: 1736px;
+  left: 815px;
+  gap: 0px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.subscribe-title {
+  color: var(--white);
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16.41px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  padding-bottom: 20px;
+}
+
+.position-mail {
+  position: absolute;
+  top: -2px;
+  padding-left: 16px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer2 .footer3 {
+  display: flex;
+}
+
+.footer-div .btn-footer {
+  display: flex;
+}
+
+.footer3 {
+  padding-left: 93px;
+  padding-top: 10px;
+  display: flex;
+}
+
+.footer-btn {
+  margin-top: 36px;
+  margin-left: 12px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  text-align: left;
+  color: var(--white);
+  background-color: rgba(33, 150, 243, 1);
+  width: 200px;
+  height: 50px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  padding-left: 43px;
+  cursor: pointer;
+  position: relative;
+}
+.footer-btn:hover {
+  background-color: rgba(39, 170, 247, 1);
+}
+.send-icon {
+  fill: white;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  padding-top: 3px;
+  padding-left: 25px;
+}
+
 .icon {
   fill: rgba(175, 177, 184, 1);
   width: 20px;
@@ -687,8 +773,6 @@ a {
   pointer-events: none;
 }
 
-
-
 [data-modal] {
   height: 100%;
   width: 100%;
@@ -696,7 +780,6 @@ a {
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.5);
-  
 }
 
 .is-hidden [data-modal-content] {
@@ -714,11 +797,8 @@ a {
   transition-duration: 1s;
   padding: 20px;
   border-radius: 4px;
-  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
-   0px 1px 1px 0px rgba(0, 0, 0, 0.14);
-   0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-
-   
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 
 [data-modal-close] {
@@ -754,14 +834,12 @@ a {
   gap: 10px;
 }
 
-
 .modal-form__comments {
   width: 448px;
-    height: 120px;
-    padding-left: 10px;
-    border-color: var(--light-black);
-    border-radius: 5px;
-
+  height: 120px;
+  padding-left: 10px;
+  border-color: var(--light-black);
+  border-radius: 5px;
 }
 
 .modal-form__position {
@@ -769,13 +847,11 @@ a {
   display: flex;
   flex-direction: column;
   gap: 4px;
-  font-weight: 400px;
-  size: 12px;
+  font-weight: 400;
+  font-size: 12px;
   line-height: 14.06px;
   letter-spacing: 0.01em;
   position: relative;
-  
-    
 }
 
 .modal-form__position svg {
@@ -791,20 +867,18 @@ a {
   border: 1px solid var(--light-black);
   border-radius: 5px;
   cursor: pointer;
-  
 }
 
 .modal-form__checked {
   display: flex;
   flex-direction: row;
- align-items:center;
- font-size: 14px;
- font-weight: 400;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 400;
   letter-spacing: 0.03em;
   line-height: 24px;
   text-align: left;
   padding-left: 13px;
-
 }
 
 .modal-form__input:hover,
@@ -812,16 +886,13 @@ a {
 .modal-form__comments:hover,
 .modal-form__comments:focus {
   border-color: var(--blue);
-
 }
 .modal-form__input:focus {
   border-color: var(--blue);
 }
-.modal-form__position :focus+svg,
-.modal-form__position :hover+svg 
- {
+.modal-form__position :focus + svg,
+.modal-form__position :hover + svg {
   fill: var(--blue);
-  
 }
 .modal-form__comments {
   padding-top: 12px;
@@ -833,105 +904,36 @@ a {
   width: 16px;
   height: 15px;
   border: 0.2px solid rgba(255, 255, 255, 1);
-  
 }
 
 .modal-form__btn {
   margin: 30px 108px 40px 112px;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 30px;
-    letter-spacing: 0.06em;
-    text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  text-align: center;
   color: var(--white);
-  background-color:rgba(33, 150, 243, 1);
+  background-color: rgba(33, 150, 243, 1);
   width: 200px;
-    height: 50px;
-    gap: 0px;
-    border-radius: 4px 0px 0px 0px;
-    opacity: 0px;
-    border: none;
-    border-radius: 4px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    cursor: pointer;
-   
+  height: 50px;
+  gap: 0px;
+  border-radius: 4px 0px 0px 0px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
 }
 .modal-form__btn:hover {
-  
   width: 201px;
-    height: 51px;
+  height: 51px;
 }
 .condition {
   color: rgba(33, 150, 243, 1);
   text-decoration: underline;
-  
 }
 
 .modal-icon {
   width: 18px;
-  height: 18px; 
+  height: 18px;
 }
-
-.subscribe-title {
-  color: var(--white);
-  font-family: Roboto;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 16.41px;
-    letter-spacing: 0.03em;
-    text-align: left;
-}
-.email-footer {
-  position: relative;
- 
-}
-.footer-email {
-  background: var(--footer-color);
-  width: 358px;
-    height: 50px;
-    top: 1736px;
-    left: 815px;
-    gap: 0px;
-    border-radius: 4px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    border: 1px solid rgba(255, 255, 255, 0.3)
-}
-.position-mail {
-  position: absolute;
-  top: -2px;
-  padding-left: 16px;
-  font-family: Roboto;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 20px;
-    letter-spacing: 0.03em;
-    text-align: left;
-    color: rgba(255, 255, 255, 0.6);
-}
-.footer-btn {
-    margin: 30px 108px 40px 112px;
-      font-size: 16px;
-      font-weight: 700;
-      line-height: 30px;
-      letter-spacing: 0.06em;
-      text-align: left;
-      color: var(--white);
-      background-color: rgba(33, 150, 243, 1);
-      width: 200px;
-      height: 50px;
-      border-radius: 4px 0px 0px 0px;
-      border: none;
-      border-radius: 4px;
-      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-      padding-left: 43px;
-      cursor: pointer;
-    
-}
-.send-icon {
-  fill: white;
-  width: 24px;
-  height: 24px;
-
-
-}
-
