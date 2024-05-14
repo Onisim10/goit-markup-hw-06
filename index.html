@@ -36,7 +36,7 @@
           </div>
           <div class="about">
             <ul>
-              <li><a class="about__studio" href="index.html">Studio</a></li>
+              <li><a class="active" href="index.html">Studio</a></li>
               <li><a href="portofoliu.html">Portfolio</a></li>
               <li><a href="#">Contacts</a></li>
             </ul>
@@ -414,22 +414,44 @@
         <label class="modal-form__position">
         Name 
       <input type="text" name="username" class="modal-form__input" />
+      <svg class="modal-icon">
+                      <use href="./images/icons.svg#icon-person"></use>
+                    </svg>
     </label>
 
     <label class="modal-form__position">
-      Telephone
-      <input type="tel" name="userphone" class="modal-form__input" />
+      Telephone 
+      <input type="tel" name="userphone" 
+      class="modal-form__input" />
+      <svg class="modal-icon">
+                      <use href="./images/icons.svg#icon-phone"></use>
+                    </svg>
     </label>
 
     <label class="modal-form__position">
-      E-mail
+      E-mail        
       <input type="email" name="email" class="modal-form__input" />
+      <svg class="modal-icon">
+                      <use href="./images/icons.svg#icon-email"></use>
+                    </svg>
     </label>
     <label class="modal-form__position"> 
       Comments
       <textarea name="mesaj" class="modal-form__comments" placeholder=" Enter the text"></textarea>
-    </label class="modal-form__position"> 
-    <input type="checkbox" name="agree" class="modal-form__input" value="agree" /> I agree with the letter and accept the <a href="#" class="condition">Terms and Conditions</a>
+    </label> 
+         <label class="modal-form__position modal-form__checked"
+            ><input
+              type="checkbox"
+              name="agree"
+              value="agree"
+              class="modal-form__terms"
+            />
+            <span class="replace-checkbox modal-checkbox__position">
+          
+            </span>
+            I agree with the letter and accept the
+            <a href="#" class="condition">Terms and Conditions</a>
+          </label>
     <button type="submit" class="modal-form__btn">Send</button>
 
     </label>
