@@ -910,6 +910,7 @@ a {
 
 .condition {
   color: #2196f3;
+  text-decoration: underline;
 }
 
 .modal-form__input[type='checkbox'] {
